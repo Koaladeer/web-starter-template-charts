@@ -8,7 +8,7 @@ const store = useStore()
 function goToHomepage() {
   router.push(`/homepage`)
 }
-function Settings() {
+function goToSettings() {
   router.push('/settings')
 }
 </script>
@@ -61,7 +61,7 @@ function Settings() {
             </li>
             <!-- List item -->
             <li>
-              <button @click="Settings" class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Settings">
+              <button @click="goToSettings" class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Settings">
                 <!-- Settings icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linejoin="round"
                      stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"

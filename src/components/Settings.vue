@@ -3,12 +3,11 @@ import {ref} from 'vue'
 import {themeChange} from 'theme-change'
 import {onMounted} from "vue";
 import themesOrder from "daisyui/functions/themeOrder.js"
-
 onMounted(() => {
   themeChange(false)
 })
 
-const themes = themesOrder.values()
+const themes = themesOrder
 const count = ref(0)
 </script>
 
